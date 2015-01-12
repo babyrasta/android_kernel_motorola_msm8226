@@ -85,6 +85,42 @@ config CPU_FREQ_DEFAULT_GOV_INTELLIDEMAND
 	  program shall be able to set the CPU dynamically without having
 	  to enable the userspace governor manually.
 
+config CPU_FREQ_DEFAULT_GOV_WEATHLEY
+	bool "intellidemand"
+	select CPU_FREQ_GOV_WEATHLEY
+	help
+	  Use the CPUFreq governor 'intellidemand' as default. 
+
+config CPU_FREQ_DEFAULT_GOV_ONDEMANDPLUS
+	bool "intellidemand"
+	select CPU_FREQ_GOV_ONDEMANDPLUS
+	help
+	  Use the CPUFreq governor 'ondemandplus' as default. 
+
+config CPU_FREQ_DEFAULT_GOV_LIONHEART
+	bool "intellidemand"
+	select CPU_FREQ_GOV_LIONHEART
+	help
+	  Use the CPUFreq governor 'lionheart' as default. 
+
+config CPU_FREQ_DEFAULT_GOV_LULZACTIVE
+	bool "intellidemand"
+	select CPU_FREQ_GOV_LULZACTIVE
+	help
+	  Use the CPUFreq governor 'lulzactive' as default. 
+
+config CPU_FREQ_DEFAULT_GOV_SMARTASSH3
+	bool "intellidemand"
+	select CPU_FREQ_GOV_SMARTASSH3
+	help
+	  Use the CPUFreq governor 'smartassH3' as default. 
+
+config CPU_FREQ_DEFAULT_GOV_SMARTASS2
+	bool "intellidemand"
+	select CPU_FREQ_GOV_SMARTASS2
+	help
+	  Use the CPUFreq governor 'smartass2' as default. 
+
 config CPU_FREQ_DEFAULT_GOV_ONDEMAND
 	bool "ondemand"
 	select CPU_FREQ_GOV_ONDEMAND
@@ -179,6 +215,36 @@ config CPU_FREQ_GOV_INTELLIDEMAND
 	tristate "'intellidemand' cpufreq policy governor"
 	help
 	  'intellidemand' - cpufreq policy governor
+
+config CPU_FREQ_GOV_SMARTASSH3
+	tristate "'smartassH3' cpufreq policy governor"
+	help
+	  'smartassH3' - cpufreq policy governor
+
+config CPU_FREQ_GOV_LIONHEART
+	tristate "'lionheart' cpufreq policy governor"
+	help
+	  'lionheart' - cpufreq policy governor
+
+config CPU_FREQ_GOV_WEATHLEY
+	tristate "'weathley' cpufreq policy governor"
+	help
+	  'weathley' - cpufreq policy governor
+
+config CPU_FREQ_GOV_ONDEMANDPLUS
+	tristate "'ondemandplus' cpufreq policy governor"
+	help
+	  'ondemandplus' - cpufreq policy governor
+
+config CPU_FREQ_GOV_LULZACTIVE
+	tristate "'lulzactive' cpufreq policy governor"
+	help
+	  'lulzactive' - cpufreq policy governor
+
+config CPU_FREQ_GOV_SMARTASS2
+	tristate "'smartass2' cpufreq policy governor"
+	help
+	  'smartass2' - cpufreq policy governor
 
 config CPU_FREQ_GOV_INTERACTIVE
 	tristate "'interactive' cpufreq policy governor"
